@@ -8,6 +8,7 @@ name: MinTotp Workflow
       - main
 jobs:
   Build:
+    name: Unit Test
     runs-on: '${{ matrix.os }}'
     strategy:
       matrix:
