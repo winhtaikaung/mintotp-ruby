@@ -1,11 +1,16 @@
 # Mintotp
 
-Mintotp is a minimal TOTP generator written in Ruby.
+Mintotp is a minimal TOTP generator written in Ruby. Inspired by [this library](https://github.com/susam/mintotp).
+
+[![Build Status](https://app.travis-ci.com/winhtaikaung/mintotp-ruby.svg?branch=main)](https://app.travis-ci.com/winhtaikaung/mintotp-ruby)
+
+[![GitHub issues](https://img.shields.io/github/issues/winhtaikaung/mintotp-ruby)](https://github.com/winhtaikaung/mintotp-ruby/issues)
+[![GitHub license](https://img.shields.io/github/license/winhtaikaung/mintotp-ruby)](https://github.com/winhtaikaung/mintotp-ruby/blob/main/LICENSE.txt)
 
 
 <!-- Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mintotp`. To experiment with that code, run `bin/console` for an interactive prompt. -->
 
-TODO: Delete this and the text above, and describe your gem
+<!-- TODO: Delete this and the text above, and describe your gem -->
 
 ## Installation
 
