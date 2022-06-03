@@ -3,4 +3,8 @@ language: ruby
 cache: bundler
 rvm:
   - 2.7.5
-before_install: gem install bundler -v 2.1.4
+before_install: 
+  - gem install bundler -v 2.1.4
+  - bundle install --jobs=3 --retry=3
+
+script: bundle exec rake spec
