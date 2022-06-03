@@ -2,7 +2,7 @@
 
 Mintotp is a minimal TOTP generator written in Ruby. Inspired by [this library](https://github.com/susam/mintotp).
 
-[![Build Status](https://app.travis-ci.com/winhtaikaung/mintotp-ruby.svg?branch=main)](https://app.travis-ci.com/winhtaikaung/mintotp-ruby)
+[![Mintotp](https://github.com/winhtaikaung/mintotp-ruby/actions/workflows/gem-test-push.yml/badge.svg)](https://github.com/winhtaikaung/mintotp-ruby/actions/workflows/gem-test-push.yml) 
 
 [![GitHub issues](https://img.shields.io/github/issues/winhtaikaung/mintotp-ruby)](https://github.com/winhtaikaung/mintotp-ruby/issues)
 [![GitHub license](https://img.shields.io/github/license/winhtaikaung/mintotp-ruby)](https://github.com/winhtaikaung/mintotp-ruby/blob/main/LICENSE.txt)
