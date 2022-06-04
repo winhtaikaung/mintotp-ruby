@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["win"]
   spec.email         = ["winhtaikaung28@hotmail.com"]
 
-  spec.summary       = %q{Generate and validate totp token, see RFC 6238}
-  spec.description   = %q{Generate and validate totp token, see RFC 6238. Very simple implementation so far.}
+  spec.summary       = %q{Mintotp is a minimal TOTP generator written in Ruby}
+  spec.description   = %q{TOTP stands for Time-Based One-Time Password. Many websites and services require two-factor authentication (2FA) or multi-factor authentication (MFA) where the user is required to present two or more pieces of evidence:  Something only the user knows, e.g., password, passphrase, etc.  Something only the user has, e.g., hardware token, mobile phone, etc.   Something only the user is, e.g., biometrics.  TOTP stands for Time-Based One-Time Password. Many websites and services require two-factor authentication (2FA) or multi-factor authentication (MFA) where the user is required to present two or more pieces of evidence. A TOTP value serves as the second factor, i.e., it proves that the user is in possession of a device (e.g., mobile phone) that contains a TOTP secret key from which the TOTP value is generated. Usually the service provider that provides a user's account also issues a secret key encoded either as a Base32 string or as a QR code. This secret key is added to an authenticator app (e.g., Google Authenticator) on a mobile device. The app can then generate TOTP values based on the current time. By default, it generates a new TOTP value every 30 seconds.}
   spec.homepage      = "https://github.com/winhtaikaung/mintotp-ruby"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
@@ -26,4 +26,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_runtime_dependency 'base32', '~> 0.3.2'
 end

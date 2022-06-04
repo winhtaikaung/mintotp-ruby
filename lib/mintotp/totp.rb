@@ -4,11 +4,16 @@ require 'openssl'
 module Mintotp
   class TOTP
     #
-    # @key : secret key
-    # @time_step : TimeStep Second Default is 30 Second
-    # @digits : Number of digits that will generate
-    # @digest : hash name
+    # @example 
+    #    SECRET1 = "ZYTYYE5FOAGW5ML7LRWUL4WTZLNJAMZS"
+    #    minTotp = Mintotp::TOTP.new()
+    #    minTotp.totp(SECRET1)
+    # @param [string] secret key
+    # @param [integer] TimeStep Second Default is 30 Second in Google Authenticator
+    # @param [integer] Number of digits that will generate
+    # @param ['sha1'] : hash name
     #
+    # @return [string] if so
     def totp(key, time_step=30, digits=6, digest='sha1')
       hotp(key, Time.now.to_i / time_step, digits, digest)
     end
